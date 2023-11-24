@@ -34,7 +34,7 @@ services:
     ports:
       - "5000:8080"
     env_file:
-      - .env
+      - stack.env
     networks:
       - spark_network  
 
@@ -49,7 +49,7 @@ services:
     volumes:
       - ./minio/data:/data
     env_file:
-      - .env
+      - stack.env
     networks:
       - spark_network  
 
@@ -76,7 +76,7 @@ services:
     ports:
       - "3306:3306"
     env_file:
-      - .env
+      - stack.env
     networks:
       - spark_network  
 
@@ -90,7 +90,7 @@ services:
     ports:
       - "8083:8083"
     env_file:
-      - .env
+      - stack.env
     networks:
       - spark_network  
 
